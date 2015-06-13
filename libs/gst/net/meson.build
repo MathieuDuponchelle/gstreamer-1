@@ -3,6 +3,7 @@ gst_net_sources = [
   'gstnetclientclock.c',
   'gstnettimepacket.c',
   'gstnettimeprovider.c',
+  'gstntppacket.c',
   gstenum_h,
 ]
 

@@ -1,5 +1,6 @@
 gst_elements_sources = [
   'gstcapsfilter.c',
+  'gstconcat.c',
   'gstdownloadbuffer.c',
   'gstelements.c',
   'gstelements_private.c',
@@ -17,6 +18,7 @@ gst_elements_sources = [
   'gstqueue.c',
   'gstqueue2.c',
   'gstsparsefile.c',
+  'gststreamiddemux.c',
   'gsttee.c',
   'gsttypefindelement.c',
   'gstvalve.c',
