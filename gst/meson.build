@@ -178,3 +178,17 @@ libgst = shared_library('gst-1.0', gst_sources, gst_trace_sources,
   install : true,
   dependencies : glib_dep,
 )
+
+gnome = import ('gnome')
+
+girtargets = gnome.generate_gir(libgst,
+  sources : gst_sources + gst_headers,
+  nsversion : '1.0',
+  namespace : 'Gst',
+  symbol_prefix : 'gst_',
+  identifier_prefix : 'Gst',
+  export_packages : 'gst',
+  includes : ['GObject-2.0'],
+  link_with : [printf_lib, mathlib],
+  install : true
+)
